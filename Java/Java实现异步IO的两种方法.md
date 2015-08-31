@@ -1,16 +1,14 @@
 ###Java实现异步IO的两种方法
 ------
 ####1、概念
----
+
 >软件模块之间的调用方式可以分为三类：
 >- **同步调用**：一种阻塞式调用，调用方要等待对象执行完毕才返回。它是一种单向调用。
 >- **回调**：一种双向调用模式，也就是说，被调用方在接口被调用的同时会调用对方得接口。(回调函数也是一个函数或过程，不过它是一个由调用方自己实现，供被调用方使用的特殊函数。)
 >- **异步调用**：异步调用是一种类似消息或者事件的机制，不过它的调用方向刚好相反，接口的服务在收到被调用的信息或事件时，会主动调用（调用方）的接口。
 
 	一般情况下，使用回调实现异步消息的注册，通过异步调用来实现消息的通知，回调是异步调用的基础。
-	
 ####2、实现方法
----
 #####回调（CallBack）
 经典的使用回调的方式（if you call me ,i will call you）： 
 class A实现接口InA ——背景1
@@ -18,8 +16,7 @@ class A中包含一个class B的引用b ——背景2
 class B有一个参数为InA的方法test(InA a) ——背景3
 A的对象a调用B的方法传入自己，test(a) ——这一步相当于you call me
 然后b就可以在test方法中调用InA的方法 ——这一步相当于i call you back
-
----
+######实现
 调用者
 ```
 /**
@@ -101,8 +98,9 @@ public class MyFetcher implements Fetcher {
 ####Futrue
 <font color="fff000000">需要再看下Futrue模式的内容</font>
 Future类似于期权或者订货单，一般用于需要从子线程中获取所需要的结果时使用。在多线程中一般会被认为是“虚拟代理模式”。使用ExecutorService的submit方法同样可以以Future的实例为对象。
-	>A Future represents the result of an asynchronous computation. Methods are provided to check if the computation is complete, to wait for its completion, and to retrieve the result of the computation. The result can only be retrieved using method get when the computation has completed, blocking if necessary until it is ready. Cancellation is performed by the cancel method. Additional methods are provided to determine if the task completed normally or was cancelled. Once a computation has completed, the computation cannot be cancelled. If you would like to use a Future for the sake of cancellability but not provide a usable result, you can declare types of the form Future<?> and return null as a result of the underlying task. 
-		
+
+>   A Future represents the result of an asynchronous computation. Methods are provided to check if the computation is complete, to wait for its completion, and to retrieve the result of the computation. The result can only be retrieved using method get when the computation has completed, blocking if necessary until it is ready. Cancellation is performed by the cancel method. Additional methods are provided to determine if the task completed normally or was cancelled. Once a computation has completed, the computation cannot be cancelled. If you would like to use a Future for the sake of cancellability but not provide a usable result, you can declare types of the form Future<?> and return null as a result of the underlying task.
+
 ```
 package com.davkas.synio.action;
 
@@ -139,12 +137,10 @@ public class FutureExample {
 }
 
 ```
-	
-
 
 ####参考资料
 ---
 1. [异步消息的传递－回调机制](http://www.ibm.com/developerworks/cn/linux/l-callback/)
 2. [Netty In Action 第一章](www.baidu.com)
-3. [Java多线程设计模式]（www.baidu.com）
+3. [Java多线程设计模式](www.baidu.com)
 
