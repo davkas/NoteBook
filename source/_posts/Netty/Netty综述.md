@@ -1,7 +1,7 @@
 title: Netty综述
 date: 2015-08-19 20:12:23
 tag: hadoop
-update: 2015-08-19 20:12:23
+update: 2015-08-21 20:12:23
 comments: true
 categories: hadoop
 ---
