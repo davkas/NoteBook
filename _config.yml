@@ -70,8 +70,8 @@ theme: yilia
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: https://gitcafe.com/davkas/davkas.git
-    branch: gitcafe-pages
-  - type: git
     repo: https://github.com/davkas/davkas.github.io.git
     branch: master
+  - type: git
+    repo: https://gitcafe.com/davkas/davkas.git
+    branch: gitcafe-pages

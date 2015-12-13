@@ -32,10 +32,10 @@ open_in_new: false
 
 # Miscellaneous
 google_analytics: ''
-favicon: img/bitbug_favicon.ico
+favicon: https://github.com/davkas/davkas.github.io/blob/master/images/bitbug_favicon.ico?raw=true
 
 #你的头像url
-avatar: img/头像.png
+avatar: https://github.com/davkas/davkas.github.io/blob/master/images/%E5%A4%B4%E5%83%8F.png?raw=true
 #是否开启分享
 share: true
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key

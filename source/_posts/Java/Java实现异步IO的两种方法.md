@@ -1,9 +1,9 @@
 title: Java实现异步IO的两种方法
 date: 2015-08-19 20:12:23
-tag: hadoop
+tag: Java
 update: 2015-08-19 20:12:23
 comments: true
-categories: hadoop
+categories: Java
 ---
 
 #### 1、概念
