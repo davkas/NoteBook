@@ -62,6 +62,12 @@
   }) %>
 <% } %>
 
+<% if (!index && theme.chanyan && post.comments){ %>
+<section id="comments">
+    <%- partial('sohuchangyan') %>
+</section>
+<% } %>
+
 <% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
   <div id="disqus_thread"></div>
