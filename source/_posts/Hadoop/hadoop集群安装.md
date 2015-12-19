@@ -1,9 +1,9 @@
 title: hadoop集群安装
 date: 2015-08-19 20:12:23
-tag: hadoop
+tag: Hadoop
 update: 2015-08-19 20:12:23
 comments: true
-categories: hadoop
+categories: Hadoop
 ---
 
 # 集群结构
