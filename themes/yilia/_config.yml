@@ -1,17 +1,22 @@
 # Header
 menu:
   主页: /
+  随笔: /categories/随笔
+  Java: /categories/Java
+  Netty: /categories/Netty
+  Mysql: /categories/Mysql
+  Hadoop: /categories/Hadoop
   所有文章: /archives
-  随笔: /tags/随笔
+  
 
 # SubNav
-subnav:
-  github: "https://github.com/davkas/"
+#subnav:
+  #github: "https://github.com/davkas/"
   #weibo: "#"
   #rss: "#"
   #zhihu: "#"
   #douban: "#"
-  mail: "davkas@163.com"
+  #mail: "davkas@163.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -59,6 +64,6 @@ friends: false
 
 #是否开启“关于我”。
 #不开启——
-#aboutme: false
+#aboutme: true
 #开启——
-aboutme: 活一世，只为更好的生活
+aboutme: 神即道，道法自然，如来！@：davkas@163.com

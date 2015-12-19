@@ -1,6 +1,6 @@
-title: mysql索引优化选择
-data: 2015-12-18 22:29:54 
-tags:mysql,索引
+title: mysql索引
+data: 2015-12-18 22:29:54
+tags: mysql,索引
 comments: true
 categories: mysql
 ---
